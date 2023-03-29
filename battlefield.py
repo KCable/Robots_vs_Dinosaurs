@@ -9,7 +9,11 @@ class Battlefield:
         self.weapon = Weapon
         pass
 
-    def run_game(self):
+    def run_game(self, dinosaur, robot):
+
+       #Full Layout of Battle
+
+
         pass
         
 
@@ -17,7 +21,9 @@ class Battlefield:
         print("\nWelcome to the battle of the ages!\nOnly one side can win!\n")
 
 
-    def battle_phase(self):
+    def battle_phase(self, attack_power:int):
+        self.attack -= attack_power
+        
         pass
 
 
