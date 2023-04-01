@@ -3,14 +3,14 @@ from dinosaur import Dinosaur
 from weapon import Weapon
 
 class Battlefield:
-    def __init__(self):
+    def __init__(self, robot, dinosaur, weapon):
         self.robot = Robot
         self.dinosaur = Dinosaur
         self.weapon = Weapon
         pass
 
     def run_game(self, dinosaur, robot):
-
+        dinosaur_one = dinosaur
        #Full Layout of Battle
 
 
@@ -28,4 +28,6 @@ class Battlefield:
 
 
     def display_winner(self):
+        # print(f"The winner is {}")
+              
         pass

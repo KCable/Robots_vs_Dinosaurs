@@ -1,9 +1,14 @@
 class Weapon:
-    def __init__(self, name, attack_power:int):
+    def __init__(self, name:str, attack_power:int):
         self.name = ()
-        self.attack_power = ()
+        self.attack_power = 25
+
+        weapon.name = ("laser gun, ice ray, fire blaster, meteor launcher, tar slimer")
+
 
         pass
 
-    name = ("laser gun, ice ray, fire blaster, meteor launcher, tar slimer")
-    attack_power = 25
+weapon = Weapon
+
+
+

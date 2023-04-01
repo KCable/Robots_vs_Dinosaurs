@@ -4,16 +4,18 @@ class Dinosaur:
         self.name = name
         self.attack_power = attack_power
         self.health = health
+       
+        self.name = ("Rex, Godzilla, Spike, Barney, Spot")
+        self.attack_power = 25
+        self.health = 200
+  
 
-        pass
-
-    name = ("Rex, Godzilla, Spike, Barney, Spot")
-    attack_power = 25
-    health = 200
+dinosaur = Dinosaur
 
 
-    # def attack(self, name,):
-    #     self.name = [0]
-    #     self. =
+    # def attack(self):
+        
+        
    
-    
+
+ 
