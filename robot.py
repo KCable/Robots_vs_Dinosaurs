@@ -4,20 +4,19 @@ class Robot:
     def __init__(self, name:str, health:int):
         self.name = name
         self.health = health        
-        
 
-        robot.name = ("R2-D2, Wall-E, Bumblebee, Marvin")  
-        robot.health = 100
-
-    def attack(self, name:str, weapon):
-        self.name = name
-        self.active_weapon = weapon
-
-        
-        pass
+    
+    def robot_name(self):
+        self.name = ("R2-D2, Bumblebee, Marvin")
+        self.display_info()
+    
+    def active_weapon(self):
+        self.active_weapon =  Weapon
+        self.display_info()
+    
+    def health(self):
+        self.health = 200
+        self.display_info()
 
 robot = Robot
-
-active_weapon = Weapon
-    
-        
+ 
