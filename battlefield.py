@@ -10,23 +10,26 @@ class Battlefield:
         self.weapon = Weapon
         pass
 
-    def robot(self):
+    def robot(self, dinosaur):
         self.name = ("Marvin")
         self.battle_phase
+        dinosaur.health -= (25)
 
 
-    def dinosaur(self):
+    def dinosaur(self, robot):
         self.name = ("Godzilla")
         self.battle_phase
+        robot.health -= (25)
 
-    def weapon(self):
-        self.name = ("Ice Ray")
+    def weapon(self, weapon):
+        weapon.name = ("Ice Ray")
         self.battle_phase    
 
 
-    def run_game(self, dinosaur, robot):
-        dinosaur.attack = (25)
-        robot.attack = (25)
+    def run_game(self, robot, attack):
+        self.attackk= attack
+        robot.attack = attack
+        
  
     def dino_name(self):
         self.name = ("Rex, Godzilla, Barney")
@@ -45,10 +48,11 @@ class Battlefield:
         print("\nWelcome to the battle of the ages!\nOnly one side can win!\n")
 
 
-    def battle_phase(self, attack_power:int):
-        self.attack -= attack_power
+    # def battle_phase(self, robot, dinosaur,):
+    #     robot.health -= (25)
+    #     dinosaur.health -= (25)
         
-        pass
+    #     pass
 
 
     def display_winner(self):
