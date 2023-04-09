@@ -1,15 +1,14 @@
-# from Robot import Robot
-# from Dinosaur import Dinosaur
-# from Weapon import Weapon
+from Fleet import Fleet
+from Herd import Herd
 
 class Battlefield:
 
     def __init__(self):
-        self.robot = None
-        self.dinosaur = None
+        self.robot = Fleet()
+        self.dinosaur = Herd()
         pass
 
-    def run_game(self, robot, dinosaur):
+    def run_game(self):
         print ("Hello World!")
         pass   
 
