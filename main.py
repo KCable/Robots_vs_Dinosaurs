@@ -1,7 +1,7 @@
-from battlefield import Battlefield
+from Battlefield import Battlefield
 
 
 
-battlefield_one = Battlefield("Marvin", "Godzilla", "Ice Ray")
-battlefield_one.run_game("Marvin", "Godzilla")
+battlefield_one = Battlefield()
+battlefield_one.run_game("robot", "dinosaur")
 

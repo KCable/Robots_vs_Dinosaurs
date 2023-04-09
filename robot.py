@@ -1,23 +1,14 @@
-from weapon import Weapon
+from Weapon import Weapon
+from random import choice
 
 class Robot:
-    def __init__(self, robot_name, health):
-        self.name = robot_name 
-        self.health = health        
+    def __init__(self, name):
+        self.hp = 100
+        self.name = ("R2-D2", "Bumblebee", "Marvin")
+        self.weapon_list = [Weapon("Laser Gun", 10), Weapon("Ice Ray", 20), Weapon("Tar Slimer", 30)] 
+        self.active_weapon = choice(self.weapon_list)
 
         pass
     
-    def robot_name(self):
-        self.name = ("R2-D2, Bumblebee, Marvin")
-        self.display_info()
     
-    def active_weapon(self):
-        self.active_weapon = Weapon
-        self.display_info()
-    
-    def health(self):
-        self.health = 200
-        self.display_info()
-
-robot = Robot
- 
+   
