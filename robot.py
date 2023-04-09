@@ -9,6 +9,9 @@ class Robot:
         self.active_weapon = choice(self.weapon_list)
 
         pass
-    
-    
+
+    def attack(self, opponent):
+        opponent.hp -= self.active_weapon.power
+        pass
+
    
