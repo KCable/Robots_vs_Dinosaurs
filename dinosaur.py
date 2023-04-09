@@ -9,12 +9,9 @@ class Dinosaur:
         self.active_attack = choice(self.attack_list)
         pass
         
-
     def attack(self, opponent):
-        opponent.hp -= self.active_attack.power
+        opponent.hp -= self.active_attack.attack
         pass
-    
-
 
 
 

@@ -11,7 +11,7 @@ class Robot:
         pass
 
     def attack(self, opponent):
-        opponent.hp -= self.active_weapon.power
+        opponent.hp -= self.active_weapon.attack
         pass
 
    
